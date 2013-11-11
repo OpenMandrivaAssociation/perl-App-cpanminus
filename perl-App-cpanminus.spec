@@ -1,18 +1,18 @@
 %define upstream_name    App-cpanminus
-%define upstream_version 1.5020
+%define upstream_version 1.7001
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(App::cpanminus::script\\)'
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.5020
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Get, unpack, build and install modules from CPAN
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/App/App-cpanminus-1.5020.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/App/App-cpanminus-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::Install)
@@ -55,5 +55,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sat Oct 16 2010 Guillaume Rousse <guillomovitch@mandriva.org> 1.1.500-1mdv2011.0
 + Revision: 586063
 - import perl-App-cpanminus
+
 
 
