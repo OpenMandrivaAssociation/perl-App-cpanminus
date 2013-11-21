@@ -2,11 +2,12 @@
 %define upstream_version 1.7001
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(App::cpanminus::script\\)'
+%define __noautoprov 'perl\\(JSON.*|perl\\(CPAN.*|perl\\(Module.*|perl\\(HTTP.*|perl\\(Exporter.*|perl\\(File.*|perl\\(Parse.*|perl\\(String.*|perl\\(A\\)|perl\\(My\\)|perl\\(YourModule\\)'
 %endif
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 
 Summary:	Get, unpack, build and install modules from CPAN
 License:	GPL+ or Artistic
