@@ -1,5 +1,6 @@
 removed_sources:
   App-cpanminus-1.0015.tar.gz: 1977455683d4cfdd37298d02aa590a35be04d162
   App-cpanminus-1.5020.tar.gz: 91edc53fdf8f2db3154254b7ee71823eef095276
-sources:
   App-cpanminus-1.7001.tar.gz: cb14e078ae9addb6c8d9fb1e13ef4c032ce12d4d
+sources:
+  App-cpanminus-1.7004.tar.gz: 1bbcb48d7d542eb4df8109067c9843f47f86ca5a
